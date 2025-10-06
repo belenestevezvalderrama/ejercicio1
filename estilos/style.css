@@ -1,59 +1,193 @@
-body{
-     background-color: #e7fbff4b;
-     max-width: 620px;
-     margin: auto;
-     font-family: Arial, Helvetica, sans-serif;
-     text-align: center;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #faf9f6;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
 }
 
-header{
-    padding: 20px 40px;
-    
-}
-h1{
-    font-size: 50px;
-    color: darkblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- 
-}
-h2{
-    font-size: 40px;
-    color: darkblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+h1, h2, h3 {
+  color: #6e84db;
 }
 
-h3{
-    font-size: 35px;
-    color: darkblue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+p {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 1.05em;
 }
 
-p{
-    font-size: 30px;
-    color: darkblue;
-    font-weight: 200;
-    justify-content: center;
-}
-
-ul{
-    color: darkblue;
-}
-
-img{
-    height: 220px;
-    padding-top: 20px;
-    justify-content:space-between;
-}
-.cards {
+/* Galería */
+.galeria {
   display: flex;
-  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px auto;
 }
 
-.card {
-  flex: 1;
-  min-width: 250px;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
+.galeria img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto;
+}
+
+ul li {
+  background-color: #A8D0E6; 
+  padding: 12px 25px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(39, 70, 144, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  background-color: #74b9ff;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #0A2342;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.foto-principal {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto 30px; 
+  border: 4px solid #ffffff;
+  box-shadow: 
+    0 0 0 6px #A8D0E6,    
+    0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.foto-principal:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 0 8px #A8D0E6, 
+    0 6px 20px rgba(0,0,0,0.2);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f9ff;
+  color: #0A2342;
+  text-align: center;
+}
+
+
+header {
+  background: linear-gradient(135deg, #0A2342, #274690);
+  color: #fff;
+  padding: 70px 20px 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #A8D0E6;
+}
+
+
+.socials-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.social-card {
+  background-color: #fff;
+  width: 280px;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card i {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.social-card h2 {
+  color: #0A2342;
+  margin-bottom: 8px;
+}
+
+.social-card p {
+  color: #333;
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+
+.social-card a {
+  display: inline-block;
+  background-color: #A8D0E6;
+  color: #0A2342;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-card a:hover {
+  background-color: #0A2342;
+  color: #fff;
+}
+
+
+.linkedin i { color: #0A66C2; }
+.instagram i { color: #E1306C; }
+.github i { color: #333; }
+
+
+.social-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(10, 35, 66, 0.2);
+}
+
+
+footer {
+  background: linear-gradient(135deg, #0A2342, #a1baf5);
+  color: #A8D0E6;
+  padding: 25px 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  font-size: 0.9em;
+}
+
+
